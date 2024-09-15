@@ -12,7 +12,3 @@ This project is a simple navbar template built using TypeScript. The purpose of 
 ## Usage
 
 Feel free to use this navbar template in your own projects. You can clone the repository and modify it as needed.
-
-### Project Structure
-
-- **vanilla-ts/**: The main project directory containing all source files.
