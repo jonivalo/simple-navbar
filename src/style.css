@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  background-color: #EDE8F5;
+  color: #333;
+}
+
+.header {
+  background-color: #3D52A0;
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+
+/* Sticky Navbar */
+#navbar {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #3D52A0;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navbar linkit */
+#navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#navbar a:hover,
+#navbar a.active {
+  background-color: #7091E6;
+  color: white;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background-color: #3D52A0;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #8697C4;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  background-color: #8697C4;
+}
+
+.dropdown-content a:hover {
+  background-color: #ADBBDA;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #7091E6;
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  #navbar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    z-index: 1;
+  }
+
+  #navbar a {
+    text-align: left;
+    padding: 14px;
+    border-bottom: 1px solid #8697C4;
+    width: 100%;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .show {
+    display: flex;
+  }
+}
+
+.content {
+  padding: 20px;
+}
+
+/* Card Design */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.card {
+  background-color: #EDE8F5;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  width: 250px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  color: #3D52A0;
+}
+
+.card p {
+  color: #7091E6;
+}
+
+/* Lomakesivun tyyli */
+.form-container {
+  background-color: #ADBBD7;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #EDE8F5;
+  box-sizing: border-box;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 120px;
+  max-height: 300px;
+  overflow: auto;
+}
+
+form button {
+  background-color: #3D52A0;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.message {
+  color: red;
+  font-size: 14px;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
